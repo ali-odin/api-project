@@ -1,0 +1,21 @@
+.item-card {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  border-radius: 20px;
+  box-shadow: -2px 0px 12px 7px #ccc;
+  padding: 20px 25px;
+  height: 327px;
+  width: 267px;
+}
+.item-card .img-holder {
+  width: 150px;
+  height: 200px;
+}
+.item-card .img-holder img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=ItemCard.css.map */
