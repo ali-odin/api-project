@@ -4,12 +4,13 @@ import { Box, Typography } from "@mui/material";
 import { Context } from "../context/MainContext";
 import test_img from "../assets/PngItem_2129108 1.png"
 
-const CategoryCard = (props) => {
+const CategoryCard = ({category, categoryImg}) => {
 
-    const {handleSelectedCategory} = useContext(Context)
+    const { handleSelectedCategory } = useContext(Context)
+    console.log(category)
 
     return ( 
-        <div className="category-card" onClick={() => handleSelectedCategory(props.category)}>
+        <div className="category-card" onClick={() => handleSelectedCategory(category)}>
             <Box
                 sx={{
                     display: "flex",
@@ -21,7 +22,7 @@ const CategoryCard = (props) => {
                 }}
             >
                 <div className="img-holder">
-                    <img src={test_img} alt="" />
+                    <img src={categoryImg} alt="" />
                 </div>
                 <div className="category-name">
                     <Typography
@@ -34,7 +35,7 @@ const CategoryCard = (props) => {
                             textAlign: "center"
                         }}
                     >
-                        {props.category}
+                        {category}
                     </Typography>
                 </div>
             </Box>

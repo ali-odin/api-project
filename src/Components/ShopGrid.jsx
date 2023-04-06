@@ -4,6 +4,7 @@ import { Container, Button } from "@mui/material";
 import { Context } from "../context/MainContext";
 import { Link } from "react-router-dom";
 import ItemCard from "../Components/ItemCard"
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const ShopGrid = () => {
 
@@ -14,7 +15,11 @@ const ShopGrid = () => {
         <div className="shop-grid">
             <Link to='/home'>
                 <Button
-                    variant='contained'
+                    startIcon={<ArrowBackIosIcon
+                        sx={{
+                            transform: "translateX(10px)"
+                        }}
+                    />}
                 >
                     Previous
                 </Button>
@@ -30,6 +35,8 @@ const ShopGrid = () => {
                 }}
             >
                 {
+                    filteredProducts.length
+                    ?
                     filteredProducts.map((product) => {
                         return (
                             <ItemCard
@@ -37,6 +44,8 @@ const ShopGrid = () => {
                             />
                         )
                     })
+                    :
+                    <div class="lds-dual-ring"></div>
                 }
             </Container>
         </div>

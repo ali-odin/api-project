@@ -11,18 +11,20 @@ const ItemCard = ({product}) => {
             </div>
             <Typography
                 variant='h5'
+                className=""
                 sx={{
                     fontFamily: "Josefin Sans",
                     fontWeight: "700",
                     color: "var(--main-color)",
-                    // display: "flex",
-                    // flexWrap: "nowrap",
-                    maxWidth: '200px',
-                    // textOverflow: "ellipsis",
+                    flexWrap: "nowrap",
+                    maxWidth: '300px !important',
+                    height: "30px",
+                    overflow: 'hidden',
+                    textAlign: "center",
+                    marginTop: "10px"
                 }}
             >
-                {/* {product.title} */}
-                Shoes Name
+                {product.title}
             </Typography>
             <Box 
                 sx={{
