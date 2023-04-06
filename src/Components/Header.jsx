@@ -23,7 +23,7 @@ const Header = () => {
                         color: "var(--main-color)",
                     }}
                 >
-                    Ali
+                    Karim
                 </Typography>
                 <Typography
                     sx={{
@@ -62,7 +62,7 @@ const Header = () => {
                             >
                                 <ul>
                                     <li><a href="https://allaw-dev.netlify.app/html">Portfolio</a></li>
-                                    <li><a href="https://wa.link/14pdm2">Contact</a></li>
+                                    <li><a href="https://wa.link/2us214">Contact</a></li>
                                 </ul>
                             </Box>
                     }
